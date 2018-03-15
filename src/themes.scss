@@ -1,0 +1,21 @@
+// import Nebular Theme System and the default theme
+
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+@import '~@nebular/theme/styles/themes/cosmic';
+
+$nb-enabled-themes: (default, dark);
+
+$nb-themes: nb-register-theme((
+  // color-bg: #4ca6ff,
+  // shadow: 0 1px 2px 0 #3780c0,
+  layout-bg: #ffffff,
+  color-fg: #222222
+), default, default); // let's leave it as default
+
+$nb-themes: nb-register-theme((
+  color-bg: #222222,
+  shadow: 0 1px 2px 0 #000000,
+  layout-bg: #EDEDED,
+  color-fg: #303030
+), dark, cosmic); // let's leave it as default
